@@ -1,32 +1,58 @@
-<h1 align="center"> CommonJS Modules</h1>
+<p align="center">
+  <img src="./img/boolean-logo.png" alt="Boolean Logo" width="35">
+</p>
+
+<h1 align="center">CommonJS Modules</h1>
+
+Esempio di utilizzo dei moduli **CommonJS** in ambiente Node.js, con esportazione e importazione di funzioni tra file separati.
 
 ---
 
-## Consegna
+## Obiettivo
 
-Lavoriamo con i moduli commonjs esportando e importando valori e funzioni. Segui questi tre step creando i rispettivi files:
+- Comprendere il funzionamento dei moduli CommonJS
+- Esportare e importare funzioni tra file JavaScript
+- Strutturare il codice in modo modulare
 
-1 - names.js
-Crea una funzione che accetta due parametri: firstName, lastName. La funzione dovrebbe restituire un oggetto con le proprietà firstName e lastName.,
-Esporta la funzione dal file.,
+---
 
-2 - hobbies.js
-Crea una funzione che accetta tre parametri: hobbyOne, hobbyTwo, hobbyThree. La funzione dovrebbe restituire  un array di stringhe contenenti gli hobby.,
-Esporta la funzione dal file.,
+## Struttura del progetto
 
-3 - people.js
-Importa la tua funzione da names.js,
-Importa la tua funzione da hobbies.js,
-Crea una funzione che non ha parametri. La funzione dovrebbe restituire un oggetto con due proprietà: fullName ed hobbies. All'interno della tua funzione, usa le tue due funzioni precedenti per costruire l'oggetto.
+### 1. `names.js`
+- Definizione di una funzione che accetta `firstName` e `lastName`
+- La funzione restituisce un oggetto con le proprietà:
+  - `firstName`
+  - `lastName`
+- Esportazione della funzione tramite CommonJS
 
-## Output Terminale
-<p> <img src="./img/screenshot-output.png" alt="Output Terminale" width="700"/> </p>
-<br>
-<br>
-<br>
+---
+
+### 2. `hobbies.js`
+- Definizione di una funzione che accetta tre hobby
+- La funzione restituisce un array di stringhe
+- Esportazione della funzione tramite CommonJS
+
+---
+
+### 3. `people.js`
+- Importazione delle funzioni da `names.js` e `hobbies.js`
+- Definizione di una funzione senza parametri
+- Creazione e restituzione di un oggetto contenente:
+  - `fullName`
+  - `hobbies`
+- Composizione dei dati utilizzando le funzioni importate
+
+---
+
+## Output terminale
+
+<p align="center">
+  <img src="./img/screenshot-output.png" alt="Output terminale" width="700">
+</p>
+
+---
 
 ## Tecnologie utilizzate
-- Node.js
-- CommonJS (moduli JavaScript)
-- Visual Studio Code
 
+- Node.js
+- JavaScript (CommonJS)
